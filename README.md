@@ -57,3 +57,16 @@
 - ### Potential Improvements:
     - Use list comprehensions for more concise filtering and modification
     - Use in-place sorting (ages.sort()) to modify the original list directly
+
+-----
+
+## task-6.py
+- Introduction to string traversal and logical operators.
+- Iterates through a user-inputted string character by character.
+- Uses a defined list of vowels and the in operator to identify, count, and collect vowels found in the word.
+- Includes a try/except block to handle potential input errors and ensure the value is iterable.
+
+- ### Potential Improvements:
+- Convert the input to lowercase to ensure capitalized vowels are also counted (case-insensitivity)
+- Use a dictionary to track the frequency of each specific vowel found (e.g., 2 'a's, 1 'e')
+- Add specific validation (like .isalpha()) to reject strings containing numbers or symbols
