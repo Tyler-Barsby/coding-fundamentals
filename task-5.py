@@ -48,15 +48,15 @@ def proportionAge(ages):
     print(f"{(proportion*100):.2f}% of people in the age range of {range_start} - {range_end}")
         
 def main(ages):
-    # ageLength(ages)
+    ageLength(ages)
     
-    # printAges(ages)
+    printAges(ages)
     
-    # removeAges(ages)
+    removeAges(ages)
     
-    # countAges(ages)
+    countAges(ages)
     
-    # sortAges(ages)
+    sortAges(ages)
     
     proportionAge(ages)
     
