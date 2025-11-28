@@ -46,3 +46,15 @@
     - Add input validation to prevent empty string entries
     - Format the input names (e.g. use .title()) to ensure proper capitalization
     - Store the resulting strings in a list or file for later use rather than just printing immediately
+
+-----
+
+## task-5.py
+- Comprehensive exercises on List manipulation and built-in methods.
+- Performs operations such as calculating length, looping through items, modifying values, filtering data (removing outliers), and sorting.
+- Counts specific occurrences within a defined age range.
+
+- ### Potential Improvements:
+    - Implement the proportion calculation to show the percentage of the specific age group
+    - Use list comprehensions for more concise filtering and modification
+    - Use in-place sorting (ages.sort()) to modify the original list directly
