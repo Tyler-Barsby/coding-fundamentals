@@ -1,7 +1,7 @@
 def catchWord():
     try:
         word = str(input("Please enter a word: "))
-        return word
+        return word.lower()
     except ValueError as e:
         print(f"[ERROR]: {e}")
         

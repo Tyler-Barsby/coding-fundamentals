@@ -67,6 +67,5 @@
 - Includes a try/except block to handle potential input errors and ensure the value is iterable.
 
 - ### Potential Improvements:
-    - Convert the input to lowercase to ensure capitalized vowels are also counted (case-insensitivity)
     - Use a dictionary to track the frequency of each specific vowel found (e.g., 2 'a's, 1 'e')
     - Add specific validation (like .isalpha()) to reject strings containing numbers or symbols
