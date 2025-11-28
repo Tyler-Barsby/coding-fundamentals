@@ -55,6 +55,5 @@
 - Counts specific occurrences within a defined age range.
 
 - ### Potential Improvements:
-    - Implement the proportion calculation to show the percentage of the specific age group
     - Use list comprehensions for more concise filtering and modification
     - Use in-place sorting (ages.sort()) to modify the original list directly

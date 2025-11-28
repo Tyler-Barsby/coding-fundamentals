@@ -24,7 +24,7 @@ def countAges(ages):
     range_end = int(input("Enter a finishing age to count to: "))
 
     for age in ages:
-        if age in range(range_start, range_end):
+        if age in range(range_start-1, range_end+1):
             count += 1
             
     print(f"There are {count} people in the age range of {range_start} - { range_end }\n")
@@ -33,15 +33,31 @@ def sortAges(ages):
     print(f"Ascending:  {sorted(ages)}\n")
     print(f"Descending:  {sorted(ages, reverse=True)}\n")
     
+def proportionAge(ages):
+    range_start = int(input("Enter a starting age to count from: "))
+    range_end = int(input("Enter a finishing age to count to: "))
+    
+    new_ages = []
+    
+    for age in ages:
+        if age in range(range_start-1, range_end+1):
+            new_ages.append(age)
+    
+    proportion = len(new_ages)/len(ages)
+    
+    print(f"{(proportion*100):.2f}% of people in the age range of {range_start} - {range_end}")
+        
 def main(ages):
-    ageLength(ages)
+    # ageLength(ages)
     
-    printAges(ages)
+    # printAges(ages)
     
-    removeAges(ages)
+    # removeAges(ages)
     
-    countAges(ages)
+    # countAges(ages)
     
-    sortAges(ages)
+    # sortAges(ages)
+    
+    proportionAge(ages)
     
 main(ages)
