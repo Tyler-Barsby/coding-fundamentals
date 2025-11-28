@@ -70,6 +70,8 @@
     - Use a dictionary to track the frequency of each specific vowel found (e.g., 2 'a's, 1 'e')
     - Add specific validation (like .isalpha()) to reject strings containing numbers or symbols
 
+-----
+
 ## task-7.py
 - Advanced menu-driven program using Regular Expressions (re) for strict input validation.
 - Implements a functional programming approach by storing functions in a list to handle menu selection dynamically.
