@@ -27,7 +27,19 @@ def add_times():
     date1 = get_valid_time_input(f"Please enter a date to add (DD:HH:MM): ")
     date2 = get_valid_time_input(f"Please another date to add to {date1} (DD:HH:MM): ")
     
-    print(f"Accepted inputs: {date1} and {date2}")
+    # print(f"Accepted inputs: {date1} and {date2}") # debugging step
+    
+    date1_day = int(date1.split(":")[0])
+    date1_hours = int(date1.split(":")[1])
+    date1_mins = int(date1.split(":")[-1])
+    
+    date2_day = int(date2.split(":")[0])
+    date2_hours = int(date2.split(":")[1])
+    date2_mins = int(date2.split(":")[-1])
+    
+    calculated_date = f"{date1_day + date2_day}:{date1_hours + date2_hours}:{date1_mins + date2_mins}"
+    
+    return calculated_date
 
     
 def diff_times():
@@ -103,7 +115,7 @@ def main():
 
         if 1 <= choice <= len(menu_actions):
             selected_function = menu_actions[choice - 1] 
-            selected_function()
+            print(selected_function())
         else:
             print(f"\n[ERROR]: Please enter a number between 1 and {len(menu_actions)}.")
 
