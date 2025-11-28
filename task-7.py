@@ -86,14 +86,56 @@ def convert_to_minutes():
 def convert_minutes_to_time():
     print(">> Executing: Convert Minutes To Time")
     time.sleep(0.5)
+    remaining_minutes = 0
+    total_minutes = float(input("Please enter a duration in minutes: "))
+    
+    days = total_minutes // 1440
+    remaining_minutes = total_minutes % 1440
+    
+    hours = remaining_minutes // 60
+    
+    minutes = remaining_minutes % 60
+    
+    calculated_time = f"{days:02d}:{hours:02d}:{minutes:02d}"
+    
+    return calculated_time
 
 def convert_hours_to_time():
     print(">> Executing: Convert Hours To Time")
     time.sleep(0.5)
+    
+    remaining_minutes = 0
+    total_hours = float(input("Please enter a duration in minutes: "))
+    total_minutes = int(total_hours * 60)
+    
+    days = total_minutes // 1440
+    remaining_hours = total_minutes % 1440
+    
+    hours = remaining_hours // 60
+    
+    minutes = remaining_hours % 60
+    
+    calculated_time = f"{days:02d}:{hours:02d}:{minutes:02d}"
+    
+    return calculated_time
 
 def convert_days_to_time():
     print(">> Executing: Convert Days To Time")
     time.sleep(0.5)
+    
+    total_days = float(input("Please enter an amount of days to convert: "))
+    total_minutes = int(total_days * 1440)
+    
+    days = total_minutes // 1440
+    remaining_hours = total_minutes % 1440
+    
+    hours = remaining_hours // 60
+    
+    minutes = remaining_hours % 60
+    
+    calculated_time = f"{days:02d}:{hours:02d}:{minutes:02d}"
+    
+    return calculated_time
 
 def exit_script():
     print("Exiting program...")
