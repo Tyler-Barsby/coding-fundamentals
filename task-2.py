@@ -1,3 +1,14 @@
+# Exercise: 
+#     - Create a Data Structure for a library system
+#       - Data:
+#           - Author
+#           - Book Name
+#           - Publisher
+#           - Year
+#           - ISBN
+#           - Genre
+#           - Type
+
 library = {
     "J. R. R. Tolkein": [
         {
