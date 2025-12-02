@@ -91,7 +91,7 @@
     - max
     - min
 
-- ## Potential Improvements:
+- ### Potential Improvements:
     - Use .mean() to calculate the average rather than dividing the sum by the length
 
 ----
@@ -100,7 +100,18 @@
 - Introduction to writing custom functions
 - In the form of a tax calculator
 
-- ## Potential Improvements
+- ### Potential Improvements
     - Take into account national insurance
     - Allow the selection of tax brackets from previous years
 
+----
+
+## lab-classes.py
+- Introduction to OOP
+- In the form of student management system
+
+- ### Potential Improvements
+    - **Adhere to PEP 8:** Rename `calculateAverageScore` to `calculate_average_score` (snake_case) to match Python standard style guides.
+    - **Improve Scalability:** Refactor the calculation method to accept a list of scores or variable arguments (`*args`) rather than being limited to exactly three hardcoded inputs.
+    - **State Persistence:** Store the scores as an instance attribute (e.g., `self.scores = []`) inside `__init__` so the object retains its academic history over time.
+    - **String Representation:** Implement the `__str__` magic method to define how the student object is printed, replacing manual f-string formatting in the main execution block.
