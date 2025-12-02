@@ -81,3 +81,26 @@
     - Use Python's built-in datetime or timedelta modules for more robust time arithmetic instead of manual calculation
     - Refactor repeated string parsing logic (splitting by ":") into a reusable helper function to reduce code duplication
     - Add error handling for edge cases, such as negative time results in subtraction
+
+----
+
+## lab-05.py
+- Introduction to built in functions
+- Such as:
+    - split
+    - max
+    - min
+
+- ## Potential Improvements:
+    - Use .mean() to calculate the average rather than dividing the sum by the length
+
+----
+
+## lab-06.py
+- Introduction to writing custom functions
+- In the form of a tax calculator
+
+- ## Potential Improvements
+    - Take into account national insurance
+    - Allow the selection of tax brackets from previous years
+
