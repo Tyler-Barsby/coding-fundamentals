@@ -21,5 +21,9 @@ def calculateIncomeTax(salary):
     
     return total_tax
 
-salary = float(input("Please enter your salary: "))
-print(f"Your income tax is: £{calculateIncomeTax(salary):.2f}")
+def main():
+    salary = float(input("Please enter your salary: "))
+    return f"Your income tax is: £{calculateIncomeTax(salary):.2f}"
+
+if __name__ == "__main__":
+    print(main())
